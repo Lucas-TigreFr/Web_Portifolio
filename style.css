@@ -291,12 +291,20 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+}
+
+#service-1{
+	background-image: url(img/Bg.jpg);
+}
+
+#service-1 a{
+	color: white;
+	
 }
 #services .service-item::after {
 	content: '';
@@ -380,6 +388,10 @@ p {
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+}
+
+.Primoit{
+	
 }
 #projects .project-img:after {
 	content: '';

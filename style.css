@@ -390,9 +390,7 @@ p {
 	position: relative;
 }
 
-.Primoit{
-	
-}
+
 #projects .project-img:after {
 	content: '';
 	position: absolute;

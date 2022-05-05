@@ -9,6 +9,7 @@ html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
@@ -44,7 +45,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: rgb(233, 7, 112);
+	color: rgb(7, 184, 233);
 }
 
 .cta {
@@ -52,7 +53,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(233, 7, 82);
+	border: 2px solid rgb(7, 30, 233);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -62,7 +63,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: rgb(233, 7, 56);
+	background-color: rgb(7, 146, 233);
 }
 .brand h1 {
 	font-size: 3rem;
@@ -70,7 +71,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: rgb(233, 7, 18);
+	color: rgb(7, 173, 233);
 }
 
 /* Header section */
@@ -142,7 +143,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: rgb(233, 7, 37);
+	color: rgb(7, 154, 233);
 }
 #header .hamburger {
 	height: 60px;
@@ -202,11 +203,17 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+	background-image: url(img/Background.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 	position: relative;
 	z-index: 1;
+}
+
+#flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 #hero::after {
 	content: '';
@@ -216,19 +223,20 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.3;
 	z-index: -1;
 }
 #hero .hero {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0 150px;
 	justify-content: flex-start;
 }
 #hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
+	text-transform: uppercase;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
@@ -250,7 +258,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgb(233, 7, 56);
+	background-color: rgb(7, 109, 233);
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -262,6 +270,13 @@ p {
 }
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
+}
+
+#web{
+	width: 800px;
+	animation-delay: 2s;
+	animation-duration: 3s;
+	padding-right: 100px;
 }
 
 /* End Hero Section */
@@ -605,8 +620,13 @@ p {
 
 	/* Hero */
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 8rem;
 	}
+
+	#web{
+		width: 500px;
+	}
+	
 	/* End Hero */
 
 	/* Services Section */
@@ -721,6 +741,12 @@ p {
 		display: none;
 	}
 	/* End header */
+
+	/*hero*/
+
+	#web{
+		width: 800px;
+	}
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;

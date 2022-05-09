@@ -455,38 +455,38 @@ p {
 }
 #about .col-right {
 	width: 100%;
+	
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
+	
+	font-size: 3rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	font-size: 1.6rem;
 }
 #about .col-right .cta {
-	color: black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
+}
+
+#about .col-right .cta:hover{
+	background-color: rgb(36, 134, 226);
 }
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid rgb(255, 255, 255);
+	border-radius: 10px;
 }
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid rgb(233, 7, 64);
-	z-index: -1;
-}
+
 /* End About Section */
 
 /* contact Section */
@@ -606,6 +606,7 @@ p {
 		font-weight: 500;
 	}
 }
+
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -658,12 +659,15 @@ p {
 	/* End Project */
 
 	/* About */
+	#about{
+		background-color: rgb(14, 46, 154);
+	}
 	#about .about {
-		flex-direction: row;
+		flex-direction: row-reverse;
 	}
 	#about .col-left {
-		width: 600px;
-		height: 400px;
+		width: 800px;
+		height: 600px;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
@@ -671,7 +675,6 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid rgb(233, 7, 56);
 	}
 	#about .col-right {
 		text-align: left;
@@ -679,6 +682,10 @@ p {
 	}
 	#about .col-right h1 {
 		text-align: left;
+	}
+
+	#about .col-right h1 , p , h2 {
+		color: rgb(255, 255, 255);
 	}
 	/* End About */
 

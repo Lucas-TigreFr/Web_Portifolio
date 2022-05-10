@@ -660,7 +660,7 @@ p {
 
 	/* About */
 	#about{
-		background-color: rgb(14, 46, 154);
+		background-image: url(img/aaa.jpg);
 	}
 	#about .about {
 		flex-direction: row-reverse;

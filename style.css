@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import 'animate.css';
 * {
 	padding: 0;
 	margin: 0;
@@ -486,7 +487,14 @@ p {
 	border: 10px solid rgb(255, 255, 255);
 	border-radius: 10px;
 }
-
+.section-title{
+	box-shadow: inset 0 0 0 0 #54b3d6;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.section-title:hover {
+	box-shadow: inset 400px 0 0 0 #841984;
+	color: white;
+  }
 /* End About Section */
 
 /* contact Section */
@@ -660,7 +668,8 @@ p {
 
 	/* About */
 	#about{
-		background-image: url(img/aaa.jpg);
+		background: rgb(2,0,36);
+		background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 	}
 	#about .about {
 		flex-direction: row-reverse;

@@ -350,7 +350,17 @@ p {
 	background: rgb(2,0,36);
 	background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 159, 190) 100%);
 }
-
+#tecnologias{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	padding: 30px;
+}
+.tec{
+	width: 100px;
+	height: 100px;
+}
 
 /* End Services Section */
 
@@ -598,10 +608,35 @@ p {
 	/* End Hero */
 
 	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
+	@media (max-width:820px){
+		.img-slider{
+			width: 600px;
+			height: 375px;
+		}
+		.img-slider .slide .info{
+			padding: 10px 25px;
+		}
+		.img-slider .slide .info h2{
+			font-size: 35px;
+		}
+		.img-slider .slide .info p{
+			width: 70%;
+			font-size:15px;
+		}
+		.img-slider .navegation{
+			bottom:25px
+		}
+		.img-slider .navegation .btn{
+			width: 10px;
+			height: 10px;
+			margin: 8px;
+		}
+		
+		.servic{
+			width: 600px;
+			height: 375px;
+		}
+}
 	/* End Services Section */
 
 	/* Project */

@@ -349,13 +349,14 @@ p {
 #services{
 	background: rgb(2,0,36);
 	background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 159, 190) 100%);
+	padding-top: 130px;
 }
 #cards{
 	display: flex;
 	justify-content: space-around;
 	gap: 40px;
 	margin-top: 70px;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	flex-wrap: wrap;
 }
 
@@ -541,7 +542,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 18px 0 #ffffff62;
 	transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
@@ -558,9 +559,13 @@ p {
 	margin-bottom: 5px;
 }
 #contact .contact-info h2 {
-	font-size: 1.3rem;
+	font-size: 1.9rem;
 	line-height: 2rem;
 	font-weight: 500;
+}
+
+#email{
+	color: white;
 }
 /*End contact Section */
 
